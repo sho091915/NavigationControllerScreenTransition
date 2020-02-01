@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         }
     }
     
-    //上記のperformSeguen関数が呼ばれたら、下記のprepareが呼ばれる。
+   //下記のprepareは呼ばれない。→performSegueメソッドが呼ばれないから。 //上記のperformSeguen関数が呼ばれたら、下記のprepareが呼ばれる。
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let nextVC = segue.destination as! NextViewController
